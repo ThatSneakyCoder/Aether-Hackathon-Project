@@ -22,9 +22,93 @@ html, body {
   
   textarea {
     width: 100%;
-    height: 150px;
+    height: 50px;
     resize: none;
     box-sizing: border-box;
     font-size: 16px; 
   }
+
+  #chat-output {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    border: 2px solid #333;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: normal;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+  
+  
+  #chat-output p {
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  
+  .chat-output {
+    border: 2px solid #888;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 20px;
+    overflow-y: auto;
+    word-wrap: break-word; 
+  }
+  
+
+  .chat-form button {
+    background: transparent;
+    border: none;
+    margin-left: -40px;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+  
+  .chat-form button img {
+    width: 40px;
+  }
+  
+  .chat-form button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  #chat-form {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #chat-input {
+    padding-right: 40px;
+  }
+  
+  #submit-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  #submit-arrow {
+    height: 20px;
+    width: 20px;
+  }
+  
+
+  
+  
+  
+  
+  
   

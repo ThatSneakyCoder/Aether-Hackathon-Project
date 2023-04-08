@@ -8,18 +8,26 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
   <!-- Add custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <!-- arrow png library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-CeZv+DhsIt/PSd+GyfW8s/3YkiCzyFGKrT7TfNwKjvFnDslkUUP+nmU6evgbW/xvoGh9LCmQGBdcknASxy56wQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
   <!-- Create a div for the map container -->
   <div id="map">
     <div id="text-area">
+      <h2>Talk with TourGPT</h2>
       <form id="chat-form">
         <textarea id="chat-input" rows="10" cols="30" placeholder="Type something here..."></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit-button">
+          <img src="./images/arrow.png" alt="Submit" id="submit-arrow">
+        </button>
       </form>
-      <div id="chat-output"></div>
+      <div id="chat-output" class="chat-output"></div>
     </div>
   </div>
+  
+  
 
   <!-- Add Leaflet JavaScript -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>

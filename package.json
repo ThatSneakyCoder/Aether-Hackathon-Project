@@ -2,7 +2,7 @@
   "name": "chat-gpt-api",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,3 +18,4 @@
     "openai": "^3.2.1"
   }
 }
+
